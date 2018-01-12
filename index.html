@@ -1,0 +1,34 @@
+---
+layout: default
+title: Home
+---
+
+<!-- START THE FEATURETTES -->
+
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+  {% assign currentmod = forloop.index0 | modulo:2 %}
+
+  {% if post.featured == 1 %}
+    {% include posts_center.html %}
+  {% else %}
+    {% if currentmod == 0 or forloop.first %}
+      {% include posts_left.html %}
+    {% else %}
+      {% include posts_right.html %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+<!-- /END THE FEATURETTES -->
+
+<nav>
+  <ul class="pager">
+    {% if paginator.previous_page %}
+      <li><a href="{{ paginator.previous_page_path }}">Anterior</a></li>
+    {% endif %}
+    {% if paginator.next_page %}
+      <li><a href="{{ paginator.next_page_path }}">Próximo</a></li>
+    {% endif %}
+  </ul>
+</nav>

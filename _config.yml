@@ -1,0 +1,49 @@
+# Development Url
+#baseUrl: http://localhost:4000
+
+# Production Url
+baseUrl: https://gamedevbr-podcast.github.io
+
+# Social Media
+linkGithub: https://github.com/gamedevbr-podcast
+
+# Site Settings
+title: GAMEDEV BR
+description: Podcast
+email: gamedevbr.podcast@gmail.com
+paginate: 20
+permalink: /:title/
+post_dirs: false
+
+# Build Settings
+gems:
+  - jekyll-paginate
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefilele
+  - README.md
+feed:
+  path: rss.xml
+
+# Podcast Settings
+licence: CC-BY-CA
+author: GAMEDEV BR
+email: gamedevbr.podcast@gmail.com
+podcast:
+  title: GAMEDEV BR
+  link: https://gamedevbr-podcast.github.io
+  art: https://gamedevbr-podcast.github.io/content/cover/capa-ps4.jpg
+  category: Games &amp; Hobbies
+  subcategories:
+  - Video Games
+  subtitle: >
+    Discussões técnicas, experiências profissionais, tecnologia e o dia-a-dia
+    na vida de 3 desenvolvedores de jogos brasileiros.
+  summary: >
+    GameDevBR é uma conversa informal entre desenvolvedores de jogos
+    sobre temas relacionados a tecnologia, cultura pop e claro, programação de
+    jogos e a cena brasileira de games. Cada episódio procura trazer discussões
+    técnicas, experiências e pontos de vista relevantes tanto a veteranos desta
+    indústria quanto a novatos e entusiastas.
